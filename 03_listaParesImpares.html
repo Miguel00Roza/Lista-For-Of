@@ -25,10 +25,14 @@
     const parDecrescente = numerosPares.join("-");
 
     numerosImpares.sort((a, b) => a - b);
-    const imparCrescente = numerosPares.join("-");
+    const imparCrescente = numerosImpares.join("-");
     numerosImpares.sort((a, b) => b - a);
-    const imparDecrescente = numerosPares.join("-");
+    const imparDecrescente = numerosImpares.join("-");
 
     //SAÍDA
-    
+    alert(`Lista par crescente: ${parCrescente}`);
+    alert(`Lista par decrescente: ${parDecrescente}`);
+    alert(`Lista par crescente: ${imparCrescente}`);
+    alert(`Lista par decrescente: ${imparDecrescente}`);
+
 </script>
