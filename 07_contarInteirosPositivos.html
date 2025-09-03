@@ -6,11 +6,16 @@
     //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
 
     //ENTRADA
-
+    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
 
     //PROCESSAMENTO
-
+    let listaNumerosInteirosPositivos = [];
+    for (let item of listaDeNumeros) {
+        if(Number.isInteger(item) && item >= 0) {
+            listaNumerosInteirosPositivos.push(item);
+        }
+    }
 
     //SAÍDA
-
+    alert(`Foram encontrados ${listaNumerosInteirosPositivos.length} numeros inteiros e positivos, sendo eles: ${listaNumerosInteirosPositivos}`);
 </script>
